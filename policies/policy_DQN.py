@@ -34,6 +34,8 @@ class Model():
         # Configurations
         self.use_double_q = False if 'use_double_q' not in policy_info else policy_info['use_double_q']  # Use double approach
         self.use_target_q = True if self.use_double_q or ('use_target_q' in policy_info and policy_info['use_target_q']) else False  # Use target network
+        self.use_soft_update = False if 'use_soft_update' not in policy_info else policy_info['use_soft_update']  # Use soft update for target network
+        self.tau = 0.001 if 'tau' not in policy_info else policy_info['tau']  # Soft update rate (typically 0.001)
 
         # Learning rate
         self.learning_rate = 0.001 if 'learning_rate' not in policy_info else policy_info['learning_rate']                              # learning rate: Learning rate is used to balance how well you want the algorithm to learn from new values vs old values. This parameter takes a number between 0 and 1.
@@ -41,7 +43,7 @@ class Model():
         self.learning_rate_harmonic_a = 10 if 'learning_rate_harmonic_a' not in policy_info else policy_info['learning_rate_harmonic_a']     # default: 10; A parameter for a harmonic stepsize
         
         # Exploration Rate
-        self.exploration_rate = 0.0 if 'exploration_rate' not in policy_info else policy_info['exploration_rate']                     # default: 0.0 (epsilon)
+        self.exploration_rate = 0.7 if 'exploration_rate' not in policy_info else policy_info['exploration_rate']                     # default: 0.0 (epsilon)
         self.exploration_rate_decay = 0.0 if 'exploration_rate_decay' not in policy_info else policy_info['exploration_rate_decay']   # default: 0.995   
         self.exploration_rate_decay_rounds = 0 if 'exploration_rate_decay_rounds' not in policy_info else policy_info['exploration_rate_decay_rounds']
         if self.exploration_rate_decay_rounds > 0:
@@ -215,11 +217,17 @@ class Model():
 
             # Update the target network
             if self.use_target_q:
-                self.target_update_counter += 1
-                if self.target_update_counter % self.target_update_frequency == 0:
-                    self.DQN_target.load_state_dict(self.DQN_online.state_dict())
-                    self.DQN_target.eval() 
-                    # print(self.target_update_counter)
+                if self.use_soft_update:
+                    # Soft update: θ_target = τ * θ_online + (1 - τ) * θ_target
+                    for target_param, online_param in zip(self.DQN_target.parameters(), self.DQN_online.parameters()):
+                        target_param.data.copy_(self.tau * online_param.data + (1.0 - self.tau) * target_param.data)
+                else:
+                    # Hard update: copy online network to target network every N steps
+                    self.target_update_counter += 1
+                    if self.target_update_counter % self.target_update_frequency == 0:
+                        self.DQN_target.load_state_dict(self.DQN_online.state_dict())
+                        self.DQN_target.eval() 
+                        # print(self.target_update_counter)
 
     def update_parameter(self):
 

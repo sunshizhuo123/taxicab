@@ -1,0 +1,271 @@
+algorithm,metric,value
+Optimal,mean_reward,555.4460208065166
+Optimal,std_reward,39.2592361008186
+Optimal,sdr,0.07068056054090288
+Optimal,percentile_5,485.2640033186
+Optimal,percentile_95,612.366362317
+Optimal,median,558.765977977
+Optimal,min,321.978917916
+Optimal,max,624.5442453520001
+Optimal,skewness,-0.7041988102784154
+Optimal,kurtosis,0.6290898301007277
+VFA (opt - harmonic),mean_reward,555.3863022002959
+VFA (opt - harmonic),std_reward,39.281837505802365
+VFA (opt - harmonic),sdr,0.0707288554834319
+VFA (opt - harmonic),percentile_5,484.89958140685
+VFA (opt - harmonic),percentile_95,612.366362317
+VFA (opt - harmonic),median,558.765977977
+VFA (opt - harmonic),min,321.978917916
+VFA (opt - harmonic),max,624.5442453520001
+VFA (opt - harmonic),skewness,-0.6972324579271036
+VFA (opt - harmonic),kurtosis,0.5868885135452073
+VFA (opt - harmonic0.5),mean_reward,555.4465660172241
+VFA (opt - harmonic0.5),std_reward,39.19987107474665
+VFA (opt - harmonic0.5),sdr,0.07057361314847176
+VFA (opt - harmonic0.5),percentile_5,485.2640033186
+VFA (opt - harmonic0.5),percentile_95,612.366362317
+VFA (opt - harmonic0.5),median,558.765977977
+VFA (opt - harmonic0.5),min,321.978917916
+VFA (opt - harmonic0.5),max,624.5442453520001
+VFA (opt - harmonic0.5),skewness,-0.7027149722217712
+VFA (opt - harmonic0.5),kurtosis,0.6197021998349768
+Q-Table (standard),mean_reward,555.1092176272191
+Q-Table (standard),std_reward,38.73126883615806
+Q-Table (standard),sdr,0.06977233957979032
+Q-Table (standard),percentile_5,484.9954635542
+Q-Table (standard),percentile_95,612.366362317
+Q-Table (standard),median,558.6057949820001
+Q-Table (standard),min,358.347917916
+Q-Table (standard),max,624.5442453520001
+Q-Table (standard),skewness,-0.6923038171806608
+Q-Table (standard),kurtosis,0.5590056445201546
+"Q-Table (target, update frequency=100)",mean_reward,555.1323423482906
+"Q-Table (target, update frequency=100)",std_reward,38.722660523276765
+"Q-Table (target, update frequency=100)",sdr,0.06975392635110084
+"Q-Table (target, update frequency=100)",percentile_5,485.16285912050006
+"Q-Table (target, update frequency=100)",percentile_95,612.366362317
+"Q-Table (target, update frequency=100)",median,558.623255977
+"Q-Table (target, update frequency=100)",min,358.347917916
+"Q-Table (target, update frequency=100)",max,624.5442453520001
+"Q-Table (target, update frequency=100)",skewness,-0.6932682881801486
+"Q-Table (target, update frequency=100)",kurtosis,0.5628894814701715
+"Q-Table (double, update frequency=100)",mean_reward,555.0741216021348
+"Q-Table (double, update frequency=100)",std_reward,38.795527631531165
+"Q-Table (double, update frequency=100)",sdr,0.06989251727238505
+"Q-Table (double, update frequency=100)",percentile_5,484.23169235200004
+"Q-Table (double, update frequency=100)",percentile_95,612.366362317
+"Q-Table (double, update frequency=100)",median,558.7071957910001
+"Q-Table (double, update frequency=100)",min,359.428901877
+"Q-Table (double, update frequency=100)",max,624.5442453520001
+"Q-Table (double, update frequency=100)",skewness,-0.6923940807844833
+"Q-Table (double, update frequency=100)",kurtosis,0.5384047455285552
+"DQN (standard, h=128)",mean_reward,555.0194514588966
+"DQN (standard, h=128)",std_reward,39.51169379797651
+"DQN (standard, h=128)",sdr,0.07118974604244596
+"DQN (standard, h=128)",percentile_5,484.09175327784993
+"DQN (standard, h=128)",percentile_95,612.366362317
+"DQN (standard, h=128)",median,558.4677760695
+"DQN (standard, h=128)",min,348.79778597700005
+"DQN (standard, h=128)",max,624.5442453520001
+"DQN (standard, h=128)",skewness,-0.680431303159635
+"DQN (standard, h=128)",kurtosis,0.4685275625702956
+"DQN (standard, h=256)",mean_reward,555.2008714675233
+"DQN (standard, h=256)",std_reward,39.35120068013929
+"DQN (standard, h=256)",sdr,0.07087741158641384
+"DQN (standard, h=256)",percentile_5,484.4306878153001
+"DQN (standard, h=256)",percentile_95,612.366362317
+"DQN (standard, h=256)",median,558.580684352
+"DQN (standard, h=256)",min,348.79778597700005
+"DQN (standard, h=256)",max,622.9209883420001
+"DQN (standard, h=256)",skewness,-0.681572280454116
+"DQN (standard, h=256)",kurtosis,0.4896551796279325
+"DQN (standard lr=0.001, h=128)",mean_reward,554.9847442636068
+"DQN (standard lr=0.001, h=128)",std_reward,39.576358877622454
+"DQN (standard lr=0.001, h=128)",sdr,0.07131071491007411
+"DQN (standard lr=0.001, h=128)",percentile_5,483.26964697445
+"DQN (standard lr=0.001, h=128)",percentile_95,612.366362317
+"DQN (standard lr=0.001, h=128)",median,558.0262986645
+"DQN (standard lr=0.001, h=128)",min,344.78828597700004
+"DQN (standard lr=0.001, h=128)",max,624.5442453520001
+"DQN (standard lr=0.001, h=128)",skewness,-0.6907152880885701
+"DQN (standard lr=0.001, h=128)",kurtosis,0.5194810207642511
+"DQN (standard lr=0.0005, h=128)",mean_reward,554.2441097943613
+"DQN (standard lr=0.0005, h=128)",std_reward,39.86578344649247
+"DQN (standard lr=0.0005, h=128)",sdr,0.0719282040927484
+"DQN (standard lr=0.0005, h=128)",percentile_5,481.00883660000005
+"DQN (standard lr=0.0005, h=128)",percentile_95,611.9789418280001
+"DQN (standard lr=0.0005, h=128)",median,558.580684352
+"DQN (standard lr=0.0005, h=128)",min,373.1130257110001
+"DQN (standard lr=0.0005, h=128)",max,622.9209883420001
+"DQN (standard lr=0.0005, h=128)",skewness,-0.726608569154343
+"DQN (standard lr=0.0005, h=128)",kurtosis,0.5098540880288023
+"DQN (target, update frequency=100)",mean_reward,554.4126250952471
+"DQN (target, update frequency=100)",std_reward,39.76665559635874
+"DQN (target, update frequency=100)",sdr,0.07172754334287913
+"DQN (target, update frequency=100)",percentile_5,479.8012972725501
+"DQN (target, update frequency=100)",percentile_95,612.366362317
+"DQN (target, update frequency=100)",median,558.3829415170001
+"DQN (target, update frequency=100)",min,363.693468528
+"DQN (target, update frequency=100)",max,627.9401533420001
+"DQN (target, update frequency=100)",skewness,-0.6899492300137574
+"DQN (target, update frequency=100)",kurtosis,0.4264436310542794
+"DQN (double, update frequency=100)",mean_reward,554.1716511654822
+"DQN (double, update frequency=100)",std_reward,39.757925256312134
+"DQN (double, update frequency=100)",sdr,0.07174297922439188
+"DQN (double, update frequency=100)",percentile_5,478.98564235200007
+"DQN (double, update frequency=100)",percentile_95,612.366362317
+"DQN (double, update frequency=100)",median,557.8373931420001
+"DQN (double, update frequency=100)",min,363.693468528
+"DQN (double, update frequency=100)",max,622.9209883420001
+"DQN (double, update frequency=100)",skewness,-0.6459132513684461
+"DQN (double, update frequency=100)",kurtosis,0.25828333102418277
+"DQN (double, update frequency=1000)",mean_reward,553.9380688452519
+"DQN (double, update frequency=1000)",std_reward,39.620447316998664
+"DQN (double, update frequency=1000)",sdr,0.07152504863872612
+"DQN (double, update frequency=1000)",percentile_5,482.35380030545
+"DQN (double, update frequency=1000)",percentile_95,613.035977977
+"DQN (double, update frequency=1000)",median,558.580684352
+"DQN (double, update frequency=1000)",min,348.79778597700005
+"DQN (double, update frequency=1000)",max,622.9209883420001
+"DQN (double, update frequency=1000)",skewness,-0.6553546634975851
+"DQN (double, update frequency=1000)",kurtosis,0.46431591212123857
+"DQN (target + soft update, tau=0.001, h=128)",mean_reward,555.016763869775
+"DQN (target + soft update, tau=0.001, h=128)",std_reward,39.110197677662164
+"DQN (target + soft update, tau=0.001, h=128)",sdr,0.07046669618584474
+"DQN (target + soft update, tau=0.001, h=128)",percentile_5,483.55808770420003
+"DQN (target + soft update, tau=0.001, h=128)",percentile_95,611.9789418280001
+"DQN (target + soft update, tau=0.001, h=128)",median,558.7393313415
+"DQN (target + soft update, tau=0.001, h=128)",min,359.428901877
+"DQN (target + soft update, tau=0.001, h=128)",max,622.9209883420001
+"DQN (target + soft update, tau=0.001, h=128)",skewness,-0.709386183184537
+"DQN (target + soft update, tau=0.001, h=128)",kurtosis,0.5431562051957939
+"DQN (target + soft update, tau=0.001, h=256)",mean_reward,555.1494154793108
+"DQN (target + soft update, tau=0.001, h=256)",std_reward,39.43900233299412
+"DQN (target + soft update, tau=0.001, h=256)",sdr,0.0710421397074567
+"DQN (target + soft update, tau=0.001, h=256)",percentile_5,484.6190153026001
+"DQN (target + soft update, tau=0.001, h=256)",percentile_95,612.366362317
+"DQN (target + soft update, tau=0.001, h=256)",median,558.4756848845001
+"DQN (target + soft update, tau=0.001, h=256)",min,348.79778597700005
+"DQN (target + soft update, tau=0.001, h=256)",max,622.9209883420001
+"DQN (target + soft update, tau=0.001, h=256)",skewness,-0.6934401673906646
+"DQN (target + soft update, tau=0.001, h=256)",kurtosis,0.5450428501054687
+"DQN (target + soft update, tau=0.001, h=128, v2)",mean_reward,554.9110022558642
+"DQN (target + soft update, tau=0.001, h=128, v2)",std_reward,39.62601899676903
+"DQN (target + soft update, tau=0.001, h=128, v2)",sdr,0.0714096834189239
+"DQN (target + soft update, tau=0.001, h=128, v2)",percentile_5,481.6539760020001
+"DQN (target + soft update, tau=0.001, h=128, v2)",percentile_95,611.9789418280001
+"DQN (target + soft update, tau=0.001, h=128, v2)",median,558.580684352
+"DQN (target + soft update, tau=0.001, h=128, v2)",min,373.1130257110001
+"DQN (target + soft update, tau=0.001, h=128, v2)",max,624.5442453520001
+"DQN (target + soft update, tau=0.001, h=128, v2)",skewness,-0.6944030583762592
+"DQN (target + soft update, tau=0.001, h=128, v2)",kurtosis,0.4013091034658678
+"DQN (target + soft update, tau=0.001, h=256, v2)",mean_reward,555.1969039039782
+"DQN (target + soft update, tau=0.001, h=256, v2)",std_reward,39.334674782445795
+"DQN (target + soft update, tau=0.001, h=256, v2)",sdr,0.07084815226067753
+"DQN (target + soft update, tau=0.001, h=256, v2)",percentile_5,484.2922327265
+"DQN (target + soft update, tau=0.001, h=256, v2)",percentile_95,612.366362317
+"DQN (target + soft update, tau=0.001, h=256, v2)",median,558.639594147
+"DQN (target + soft update, tau=0.001, h=256, v2)",min,359.428901877
+"DQN (target + soft update, tau=0.001, h=256, v2)",max,622.9209883420001
+"DQN (target + soft update, tau=0.001, h=256, v2)",skewness,-0.6971824456941321
+"DQN (target + soft update, tau=0.001, h=256, v2)",kurtosis,0.5123251632906043
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",mean_reward,554.9079840123203
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",std_reward,39.581700577362184
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",sdr,0.07133020557960358
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",percentile_5,481.6539760020001
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",percentile_95,611.9789418280001
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",median,558.5991871825001
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",min,373.1130257110001
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",max,624.5442453520001
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",skewness,-0.6899120044232141
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=128)",kurtosis,0.3840567857025401
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",mean_reward,555.1742421110654
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",std_reward,39.572554176230014
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",sdr,0.07127952122878448
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",percentile_5,483.27816209540003
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",percentile_95,612.366362317
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",median,558.642258172
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",min,348.79778597700005
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",max,622.9209883420001
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",skewness,-0.7086636357919721
+"DQN (double + soft update, tau=0.001, lr=0.001, h=128)",kurtosis,0.5464451089629017
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",mean_reward,555.2018498913911
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",std_reward,39.323007254832106
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",sdr,0.0708265061842364
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",percentile_5,484.2302397577
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",percentile_95,612.366362317
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",median,558.6635060975
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",min,359.428901877
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",max,622.9209883420001
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",skewness,-0.6980393463263465
+"DQN (double + soft update, tau=0.001, lr=0.0005, h=256)",kurtosis,0.5108948695142734
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",mean_reward,555.0601721428493
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",std_reward,39.368792591015406
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",sdr,0.0709270716344669
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",percentile_5,484.8362865466501
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",percentile_95,612.366362317
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",median,558.3067901645002
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",min,348.79778597700005
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",max,622.9209883420001
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",skewness,-0.6864738372125168
+"DQN (double + soft update, tau=0.001, lr=0.001, h=256)",kurtosis,0.5232424062417924
+"DQN (double + soft update, tau=0.001, v1)",mean_reward,554.8388032317515
+"DQN (double + soft update, tau=0.001, v1)",std_reward,40.09101816322876
+"DQN (double + soft update, tau=0.001, v1)",sdr,0.07225705543612292
+"DQN (double + soft update, tau=0.001, v1)",percentile_5,480.9975838957501
+"DQN (double + soft update, tau=0.001, v1)",percentile_95,612.366362317
+"DQN (double + soft update, tau=0.001, v1)",median,558.580684352
+"DQN (double + soft update, tau=0.001, v1)",min,374.66270766700006
+"DQN (double + soft update, tau=0.001, v1)",max,624.5442453520001
+"DQN (double + soft update, tau=0.001, v1)",skewness,-0.7015770952812999
+"DQN (double + soft update, tau=0.001, v1)",kurtosis,0.4047643293238443
+"DQN (double + soft update, tau=0.001, v2)",mean_reward,555.1954896160753
+"DQN (double + soft update, tau=0.001, v2)",std_reward,39.32575792235882
+"DQN (double + soft update, tau=0.001, v2)",sdr,0.07083227197964645
+"DQN (double + soft update, tau=0.001, v2)",percentile_5,484.8289739290501
+"DQN (double + soft update, tau=0.001, v2)",percentile_95,612.366362317
+"DQN (double + soft update, tau=0.001, v2)",median,558.7643923520001
+"DQN (double + soft update, tau=0.001, v2)",min,355.3196123520001
+"DQN (double + soft update, tau=0.001, v2)",max,624.5442453520001
+"DQN (double + soft update, tau=0.001, v2)",skewness,-0.6804591251339996
+"DQN (double + soft update, tau=0.001, v2)",kurtosis,0.5093901478377107
+"DQN (target + soft update, tau=0.001, 0.5)",mean_reward,555.1413045288849
+"DQN (target + soft update, tau=0.001, 0.5)",std_reward,39.46048903168762
+"DQN (target + soft update, tau=0.001, 0.5)",sdr,0.07108188259415388
+"DQN (target + soft update, tau=0.001, 0.5)",percentile_5,483.31616411475005
+"DQN (target + soft update, tau=0.001, 0.5)",percentile_95,612.366362317
+"DQN (target + soft update, tau=0.001, 0.5)",median,558.4871134135001
+"DQN (target + soft update, tau=0.001, 0.5)",min,359.428901877
+"DQN (target + soft update, tau=0.001, 0.5)",max,622.9209883420001
+"DQN (target + soft update, tau=0.001, 0.5)",skewness,-0.6883561474878658
+"DQN (target + soft update, tau=0.001, 0.5)",kurtosis,0.4847505672005905
+"DQN (double + soft update, tau=0.001, 0.5)",mean_reward,555.1668292333833
+"DQN (double + soft update, tau=0.001, 0.5)",std_reward,39.43583536682365
+"DQN (double + soft update, tau=0.001, 0.5)",sdr,0.07103420681901991
+"DQN (double + soft update, tau=0.001, 0.5)",percentile_5,483.44460836575
+"DQN (double + soft update, tau=0.001, 0.5)",percentile_95,612.366362317
+"DQN (double + soft update, tau=0.001, 0.5)",median,558.5787231645
+"DQN (double + soft update, tau=0.001, 0.5)",min,359.428901877
+"DQN (double + soft update, tau=0.001, 0.5)",max,622.9209883420001
+"DQN (double + soft update, tau=0.001, 0.5)",skewness,-0.6845859477879759
+"DQN (double + soft update, tau=0.001, 0.5)",kurtosis,0.46687752022201723
+Greedy,mean_reward,542.9609575766362
+Greedy,std_reward,43.9859932142481
+Greedy,sdr,0.08101133718816181
+Greedy,percentile_5,466.5800400233501
+Greedy,percentile_95,604.97542687395
+Greedy,median,546.3282571725
+Greedy,min,332.378140977
+Greedy,max,623.742345352
+Greedy,skewness,-0.5947850605861593
+Greedy,kurtosis,0.33255257108722835
+Random,mean_reward,151.2352340064344
+Random,std_reward,67.71802108481387
+Random,sdr,0.44776616725394003
+Random,percentile_5,48.87952512345001
+Random,percentile_95,270.8682214
+Random,median,146.42396710650002
+Random,min,0.0
+Random,max,462.12862366
+Random,skewness,0.43460413623819544
+Random,kurtosis,0.07834929372101174

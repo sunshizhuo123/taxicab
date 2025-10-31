@@ -19,28 +19,28 @@ def generate_excel_letters(n):
 class Instance:
 
     def __init__(self, nodes, periods, discount_rate, rnd_seed):
-        self.nodes = [n for n in range(nodes)]                # List of nodes as index, starting at 0: 0, 1, 2, ...
-        self.nodes_letter = generate_excel_letters(n=nodes)     # List of nodes: A, B, ..., AA, AB, AC, ...
-        self.periods = [t for t in range(periods)]            # list of time periods: 1, 2, 3, ... 
+        self.nodes = [n for n in range(nodes)]  # List of nodes as index, starting at 0: 0, 1, 2, ...
+        self.nodes_letter = generate_excel_letters(n=nodes)  # List of nodes: A, B, ..., AA, AB, AC, ...
+        self.periods = [t for t in range(periods)]  # list of time periods: 1, 2, 3, ...
         self.last_period = self.periods[-1]
-        self.discount_rate = discount_rate                      # discount rate: The discount is used to balance immediate and future reward. This value takes a number between 0 and 1.
+        self.discount_rate = discount_rate  # discount rate: The discount is used to balance immediate and future reward. This value takes a number between 0 and 1.
 
         rnd_state_instance = np.random.RandomState(rnd_seed)
 
         # used in create_demand() in State
         self.demand_and_probabilities = {}
-        for i in self.nodes:            
+        for i in self.nodes:
             for t in self.periods:
                 p = np.round(rnd_state_instance.random(size=len(self.nodes)), 6)
                 d = rnd_state_instance.randint(0, 101, size=len(self.nodes))
                 self.demand_and_probabilities[(i, t)] = dict(p=p, d=d)
 
         # asign x-y coordinates
-        self.xy_coordinates = {n: {'x': rnd_state_instance.randint(0, 1000), 'y': rnd_state_instance.randint(0, 1000)} for n in self.nodes}
+        self.xy_coordinates = {n: {'x': rnd_state_instance.randint(0, 1000), 'y': rnd_state_instance.randint(0, 1000)}
+                               for n in self.nodes}
 
         # print(self.demand)
         self.name = 'N' + str(nodes) + 'xT' + str(periods)
-
 
     def optimal_state_values(self):
         """
@@ -51,7 +51,7 @@ class Instance:
         """
 
         # create a dict storing the "actual" expected value of all states
-        states = np.array([[0.0 for n in self.nodes] for t in self.periods]) # [time][node]
+        states = np.array([[0.0 for n in self.nodes] for t in self.periods])  # [time][node]
 
         # start in the last period
         for t in reversed(self.periods):
@@ -70,10 +70,10 @@ class Instance:
                         D.append([demand, prob])
                     else:
                         # immediate and downstream reward
-                        D.append([demand + (self.discount_rate * states[t+1][target]), 
+                        D.append([demand + (self.discount_rate * states[t + 1][target]),
                                   prob])
-                        
-                        D.append([(self.discount_rate * states[t+1][target]), 
+
+                        D.append([(self.discount_rate * states[t + 1][target]),
                                   1])
 
                 # compute value of optimal policy (see VFA tutorial paper, published in 4OR, for an explanation)
@@ -89,6 +89,6 @@ class Instance:
 
                     if rolling_probability >= 1:
                         break
-        
+
         return states
 
